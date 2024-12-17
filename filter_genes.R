@@ -1,5 +1,12 @@
-# Function to filter low-expressed genes
-filter_genes <- function(count_data, threshold) {
-    filtered_data <- count_data[rowSums(count_data > threshold) > 0, ]
-    return(filtered_data)
+#' Filter low-expressed genes
+#'
+#' This function filters genes with low expression from the dataset.
+#'
+#' @param data A dataframe containing gene expression data.
+#' @param threshold Numeric value for minimum expression threshold.
+#'
+#' @return A dataframe with filtered genes.
+#' @export
+filter_genes <- function(data, threshold = 10) {
+    return(data[data$expression >= threshold, ])
 }
