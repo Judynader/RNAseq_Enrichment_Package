@@ -8,6 +8,7 @@
 #' @param sample_table_file A string representing the path to the sample table text file.
 #'                          Default is "E-MTAB-2523_sample table.txt".
 #' @param output_dir A string representing the directory where output files will be saved.
+#'                    Default is "data/processed/".
 #' @param fdr_threshold A numeric value for the FDR threshold for filtering DE genes (default is 0.05).
 #' @param log2fc_threshold A numeric value for the log2 fold change threshold for filtering DE genes (default is 1).
 #'
