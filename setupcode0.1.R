@@ -1,15 +1,17 @@
 #' RNA-seq Analysis and Enrichment
 #'
-#' This function performs RNA-seq data analysis including filtering low-expressed genes,
-#' differential expression analysis, and over-representation analysis using GO and KEGG.
+#'@description
+#'This function performs RNA-seq data analysis including filtering low-expressed genes,
+#' differential expression analysis, and over-representation analysis using GO and KEGG. 
+#' It filters DEGs based on a FDR value < 0.05 and absolute logFC value of > 1.3.
 #'
 #' @param counts_file A string representing the path to the RNA-seq count data text file.
 #'                    Default is "E-MTAB-2523.counts.txt".
 #' @param sample_table_file A string representing the path to the sample table text file.
 #'                          Default is "E-MTAB-2523_sample table.txt".
 #' @param output_dir A string representing the directory where output files will be saved.
-#' @param fdr_threshold A numeric value for the FDR threshold for filtering DE genes (value < 0.05).
-#' @param log2fc_threshold A numeric value for the log2 fold change threshold for filtering DE genes (value > 1.3).
+#' @param fdr_threshold A numeric value for the FDR threshold for filtering DE genes.
+#' @param log2fc_threshold A numeric value for the log2 fold change threshold for filtering DE genes.
 #'
 #' @import DESeq2
 #' @import clusterProfiler
