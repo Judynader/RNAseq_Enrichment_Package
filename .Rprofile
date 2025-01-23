@@ -1,3 +1,4 @@
+source("renv/activate.R")
 library(devtools)
 library(openxlsx)
 library(ggplot2)

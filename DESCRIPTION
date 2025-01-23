@@ -1,21 +1,13 @@
 Package: RNAseqEnrichment
-Title: RNA-seq Enrichment Analysis
-Version: 0.0.0.9000
-Authors@R: 
-    person("Yael", "Campoy Fernández", , "b24yaeca@student.his.se", role = c("aut", "cre"))
-Description: This package provides functions for performing enrichment analysis on RNA-seq datasets, including importing count data, filtering low-expressed genes, identifying differentially expressed genes, and conducting over-representation analysis using GO and KEGG pathways.
-License: MIT + file LICENSE
+Type: Package
+Title: RNA-seq Enrichment Analysis Package
+Version: 0.1.0
+Author: Judynader
+Maintainer: Judynader <judynader@gmail.com>
+Description: An R package for performing RNA-seq differential expression analysis using DESeq2/edgeR and enrichment analysis with clusterProfiler.
+Depends: R (>= 4.0.0)
+Imports: edgeR, clusterProfiler, enrichplot, openxlsx, org.Hs.eg.db
+License: GPL-3
 Encoding: UTF-8
-Imports:
-    edgeR,
-    clusterProfiler,
-    enrichplot,
-    org.Hs.eg.db,
-    openxlsx,
-    ggplot2,
-    BiocManager
-Roxygen: list(markdown = TRUE)
+LazyData: true
 RoxygenNote: 7.3.2
-Suggests: 
-    testthat (>= 3.0.0)
-Config/testthat/edition: 3
