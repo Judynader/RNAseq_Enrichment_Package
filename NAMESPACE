@@ -1,2 +1,4 @@
 export(de_analysis)
 export(filter_genes)
+export(import_data)
+export(enrichment_analysis)
