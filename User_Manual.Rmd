@@ -1,0 +1,67 @@
+---
+title: "RNASeqAnalysis_Manual"
+author: "Judy and Yael"
+date: "2025-01-20"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# RNASeqAnalysis
+
+The function of this package is all within one function. The function ImportData() will import the data, filter the value counts of the count table that is used and then identify the DEGs from the file.
+
+After, Enrichment Analysis is done and enrichGO and enrichKEGG are used and the pictures are saved to the current working directory.
+
+## Preparation
+
+To be able to use the R package, you should have these packages downloaded:
+
+* devtools
+* edgeR
+* clusterProfiler
+* enrichplot
+* org.Hs.eg.db
+* openxlsx
+* DESeq2
+* ggplot2
+
+```{r Install, eval = F, echo = T}
+install.packages(c("openxlsx", "ggplot2")
+
+##Install Bioconductor packages
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install(c("edgeR", "clusterProfiler", "enrichplot", "org.Hs.eg.db", "DESeq2", "AnnotationDbi"))
+
+#Load the required libraries
+install.packages("devtools")
+```
+
+## After packages are downloaded
+
+Once you have downloaded the R packages, you can now download the R package:
+
+```{r Downloading, eval=F, echo=T}
+library(devtools)
+install_github("Judynader/RNAseq");
+```
+
+Now you load the package *RNASeqAnalysis*
+
+One package is loaded there is only one function to run ImportData(). The two parameters are the count data file and the sample data file. If they are not located in the current working directory then you also write the path to the file.
+
+```{r Using, eval=F, echo=T}
+library(RNASeqAnalysis)
+
+ImportData("E-MTAB-2523.counts.txt", "E-MTAB-2523_sample table.txt")
+
+```
+
+
+## Done
+
+Once the function does its job, there will be data files saved to the working directory including the enrichment analysis visuals.

@@ -1,0 +1,11 @@
+Package: RNASeqAnalysis
+Type: Package
+Title: Enrichment Analysis of RNA expression data set
+Version: 0.1.0
+Author: Judy Nader and Yael
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: Imports data, filters gene data, and identifies DEGs
+License: MIT License
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2.9000
