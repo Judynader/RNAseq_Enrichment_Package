@@ -4,7 +4,9 @@ Title: RNA-seq Enrichment Analysis Package
 Version: 0.1.0
 Author: Judynader
 Maintainer: Judynader <judynader@gmail.com>
-Description: An R package for performing RNA-seq differential expression analysis using DESeq2/edgeR and enrichment analysis with clusterProfiler.
+Description: An R package designed for RNA-seq differential expression analysis using DESeq2/edgeR and enrichment analysis using clusterProfiler. 
+  The package provides functions for importing RNA-seq data, filtering genes, performing differential expression analysis, 
+  and conducting gene enrichment analysis using gene ontology (GO) terms.
 Depends: R (>= 4.0.0)
 Imports: edgeR, clusterProfiler, enrichplot, openxlsx, org.Hs.eg.db
 License: GPL-3
