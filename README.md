@@ -12,3 +12,8 @@ This project was developed as part of a collaborative effort:
 - Identify differentially expressed genes (DEGs) using edgeR.
 - Perform enrichment analysis (GO and KEGG pathways) using clusterProfiler.
 - Export results to Excel and visualize enrichment results (dotplot, cnetplot, treeplot).
+## Installation
+You can install the package from GitHub using devtools:
+```r
+install.packages("devtools")
+devtools::install_github("JudyNader/RNAseq_Enrichment_Package")
